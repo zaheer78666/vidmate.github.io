@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-image {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 50%;
+    padding-left: 2rem;
+}
+
+/* Features Section */
+.features {
+    padding: 2rem 0;
+    background: #eaeaea;
+    text-align: center;
+}
+
+.feature-item {
+    margin-bottom: 2rem;
+}
+
+.feature-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Articles Section */
+.articles {
+    padding: 2rem 0;
+}
+
+.article-item {
+    margin-bottom: 2rem;
+}
+
+.article-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 2rem 0;
+}
+
+.faq-item h4 {
+    margin-bottom: 1rem;
+}
+
+/* Conclusion Section */
+.conclusion {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-image,
+    .hero-text {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+}
